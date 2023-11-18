@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Lambda Run!</title>
+  <link rel="stylesheet" href="frontend/style.css" />
+  <script src="config.js"></script>
+  <script src="frontend/game.js"></script>
+</head>
+
+<body onLoad="setup(objects);initPlayerPos(objects);">
+
+<div id='frame'>
+  <div class="status">Energy: <div id="energy"></div></div>
+  <div class="status">Score: <span id="score"></span></div>
+  <div class="status">Inventory: <span id="inventory"></span></div>
+  <table id="board"></table>
+  <br />
+  <div class="status" id="outcome"></div>
+  <div class="status" id="warning"></div>
+</div>
+<div class="door"></div>
+
+<div class='instructions'>
+  Task: Score as many points as possible and get to the Lambda square in the third room. <br><br>
+  Keys(both ways): First door - orange key <br>
+  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&nbsp; Second door - blue and yellow keys <br><br>
+  Coins: Copper - 1 point <br>
+  &emsp; &emsp;&ensp; Gold &emsp; - 2 points <br><br>
+  Snacks: Berries&ensp; - 3 energy <br>
+  &emsp; &emsp; &emsp; Apples &nbsp; - 5 energy <br>
+  &emsp; &emsp; &emsp; Freddos - 10 energy
+</div>
+</body>
+
+</html>
